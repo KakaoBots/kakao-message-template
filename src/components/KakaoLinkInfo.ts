@@ -9,8 +9,8 @@ export default class KakaoLinkInfo extends Component {
     constructor() {
 
         super();
-        this.appID = '331278';
-        this.templateID = '3140';
+        this.appID = '331278'; // 카카오톡 디벨로퍼에서 생성한 봇의 appID 값
+        this.templateID = '3139';
 
     }
 
