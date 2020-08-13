@@ -12,6 +12,7 @@ export default class MessageInfo extends Component {
     private serviceIcon: string;
     private isForwardable: boolean;
     private isVerified: boolean;
+    private message: string;
     private readonly versionAndroid: string;
     private readonly versionIphone: string;
     private readonly versionWindows: string;
@@ -68,6 +69,10 @@ export default class MessageInfo extends Component {
     get IsVerified(): boolean {
         return this.isVerified;
     }
+    
+    get Message(): string {
+        return this.message;
+    }
 
     set Type(query: MessageType) {
         this.type = query;
@@ -96,12 +101,16 @@ export default class MessageInfo extends Component {
     set IsVerified(query: boolean) {
         this.isVerified = query;
     }
+    
+    set Message(query: boolean) {
+        this.message = query;
+    }
 
     toJson(): MessageInfoModel {
 
         return {
             TP: this.type,
-            ME: '카카오링크',
+            ME: this.message,
             SNM: this.serviceName,
             SIC: this.serviceIcon,
             L: this.link.toJson(),
