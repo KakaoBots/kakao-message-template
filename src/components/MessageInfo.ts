@@ -33,6 +33,7 @@ export default class MessageInfo extends Component {
         this.serviceIcon = serviceIcon;
         this.isForwardable = true;
         this.isVerified = false;
+        this.message = '카카오링크';
         this.versionAndroid = '6.4.5';
         this.versionIphone = '6.4.5';
         this.versionWindows = '2.3.5';
