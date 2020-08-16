@@ -38,8 +38,8 @@ export default class MessageInfo extends Component {
         this.versionIphone = '6.4.5';
         this.versionWindows = '2.3.5';
         this.versionMac = '2.6.1';
-        this.serviceID = 'plusfriend_bot';
-        this.documentID = 'profile_id=256584582';
+        this.serviceID = 'capri_331278'; // capri_ 뒤에는 카카오톡 디벨로퍼에서 생성한 봇의 appID 값;
+        this.documentID = link.PC;
 
     }
 
